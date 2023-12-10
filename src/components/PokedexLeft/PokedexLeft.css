@@ -1,0 +1,23 @@
+.pokedex__left {
+    width: 40em;
+    height: 46em;
+    display: flex;
+    background-color: crimson;
+    box-shadow: 5px 9px 1px 5px darkred;
+    border: 4px solid #000;
+    border-radius: 10px;
+    flex-direction: column;
+    padding-bottom: 4.3em;
+    font-size: 1em;
+    position: relative;
+    background-color: #d5092b;    
+}
+
+.pokedex__left-wrapper {
+    position: relative;
+    top: 10em;
+}
+
+.pokedex__left-screen {
+    height: 15em;
+}

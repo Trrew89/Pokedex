@@ -1,0 +1,11 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
