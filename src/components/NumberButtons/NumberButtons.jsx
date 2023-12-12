@@ -1,15 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import MyButton from "../Button/MyButton";
 import './NumberButtons.css'
 import { getPokemonById } from "../../http/pokeApi";
+import { Pokemon } from "../PokedexWrapper/PokedexWrapper";
 
 const NumberButtons = () => {
+    const { setPokemon, numbers, setNumbers} = useContext(Pokemon);
     const buttons = [];
     for (let i = 0; i < 10; i++) {
         buttons.push(<MyButton key={i} className="pokedex__right-btn-num" onClick={() => setNumbers([...numbers, i])} >{i}</MyButton>);
     }
 
-    const [numbers, setNumbers] = useState([]);
     const [timerRef, setTimerRef] = useState(null);
 
     useEffect(() => {
@@ -18,8 +19,9 @@ const NumberButtons = () => {
                 clearTimeout(timerRef);
             }
 
-            setTimerRef(setTimeout(() => {
-                getPokemonById(+numbers.join(''));
+            setTimerRef(setTimeout(async () => {
+                const result = (await getPokemonById(+numbers.join(''))).data;
+                setPokemon(result);
                 setNumbers([]);
             }, 2000));
         }
