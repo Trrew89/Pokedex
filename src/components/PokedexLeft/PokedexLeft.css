@@ -1,6 +1,6 @@
 .pokedex__left {
-    width: 40em;
-    height: 46em;
+    width: 30em;
+    height: 40em;
     display: flex;
     background-color: crimson;
     box-shadow: 8px 8px 0px 5px darkred;
@@ -21,7 +21,7 @@
 
 .pokedex__left-screen {
     height: 15em;
-    width: 24em;
+    width: 20em;
     font-family: VT323;
 }
 
@@ -33,9 +33,9 @@
 
 .pokedex__left-screen__name {
     position: relative;
-    top: 5em;
+    top: 2em;
     right: 3em;
-    width: 6em;
+    width: 4em;
     color: #fff;
     background-color: #47ab57;
     font-size: 1.7em;

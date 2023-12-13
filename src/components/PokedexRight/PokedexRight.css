@@ -1,8 +1,7 @@
 .pokedex__right {
     z-index: 2;
-    width: 10em;
-    height: 36em;
-    min-width: 33em;
+    height: 30em;
+    max-width: 30em;
     font-size: 1em;
     position: relative;
     top: 2em;
@@ -21,9 +20,7 @@
     grid-column-gap: 3.61em;
     grid-row-gap: 3.61em;
     flex-direction: column;
-    padding-top: 3.86em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding: 3.86em 2em 0 2em;
     display: flex;
     position: relative;
 }
