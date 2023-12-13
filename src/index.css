@@ -143,12 +143,6 @@ table {
     border-spacing: 0;
 }
 
-* {
-    font-family: VT323;
-}
-
-
-
 body {
     font-family: "VT323";
 }
@@ -157,8 +151,9 @@ body {
 
 @media only screen and (max-width: 500px) {
     .wrapper {
-        flex-direction: column;
-        top: 500px;
+      flex-direction: column;
+      top: 50%;
+      zoom: 0.4;
     }
 
     .name {
