@@ -1,6 +1,6 @@
 .pokedex__left {
     width: 30em;
-    height: 40em;
+    height: 38em;
     display: flex;
     background-color: crimson;
     box-shadow: 8px 8px 0px 5px darkred;
@@ -39,6 +39,16 @@
     color: #fff;
     background-color: #47ab57;
     font-size: 1.7em;
-    font-family: VT323;
     box-shadow: inset 1px 1px 3px #000
+}
+
+
+.initialization {
+    animation: init 2s linear infinite;
+    animation-direction: alternate ;
+}
+
+@keyframes init {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }

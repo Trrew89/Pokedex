@@ -145,15 +145,15 @@ table {
 
 body {
     font-family: "VT323";
+    background: #2B2B2B;
 }
-
 
 
 @media only screen and (max-width: 500px) {
     .wrapper {
       flex-direction: column;
       top: 50%;
-      zoom: 0.4;
+      zoom: 0.35;
     }
 
     .name {
