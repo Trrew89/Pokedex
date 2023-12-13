@@ -6,7 +6,6 @@ import { Pokemon } from '../PokedexWrapper/PokedexWrapper';
 
 const PokedexRight = () => {
     const { pokemon, numbers } = useContext(Pokemon);
-    console.log(pokemon);
     return (
         <div className="pokedex__right">
             <div className='pokedex__right-wrapper'>
